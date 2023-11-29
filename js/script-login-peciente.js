@@ -7,6 +7,9 @@ const inputSenha = document.querySelector("#senha");
 //Criando elemento 'p' para o error
 const error = document.createElement('p');
 
+//Criando elemento 'a' para linkar páginas
+const link = document.createElement('button'); 
+
 //Função para limpar os textos
 function clearForm() {
   error.textContent = '';
@@ -21,7 +24,7 @@ button.addEventListener(("click"), function(event) {
 
     //validação:
     //campos de nome
-    if(inputNome.value === ''){
+    if(inputNome.value.trim() === ''){
       error.textContent = "Este campo é obrigatório";
       inputNome.insertAdjacentElement('afterend', error);
       error.setAttribute('class', 'error');
@@ -29,7 +32,7 @@ button.addEventListener(("click"), function(event) {
     } 
     
     //Campos pedindo números de documentos (CPF ou CRM)
-    if(inputDocumento.value === ''){ 
+    if(inputDocumento.value.trim() === ''){ 
       error.textContent = "Este campo é obrigatório";
       inputDocumento.insertAdjacentElement('afterend', error);
       error.setAttribute('class', 'error');
@@ -37,10 +40,13 @@ button.addEventListener(("click"), function(event) {
     } 
 
     //Campos pedindo Senha
-    if(inputSenha.value === ''){ 
+    if(inputSenha.value.trim() === ''){ 
       error.textContent = "Este campo é obrigatório";
       inputSenha.insertAdjacentElement('afterend', error);
       error.setAttribute('class', 'error');
+      return false;
+    } else {
+      window.location = "";
       return false;
     }
     
