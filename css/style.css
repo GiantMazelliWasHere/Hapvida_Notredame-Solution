@@ -48,6 +48,7 @@ input {
     background: #fff;
     box-shadow: 2px 2px 2px #000;
     color: #0b841c;
+    cursor: pointer;
 }
 
 .imagem-botao {
