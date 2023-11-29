@@ -27,35 +27,35 @@ button.addEventListener(("click"), function(event){
     if(inputPaciente.value.trim() === ''){
       error.textContent = "Este campo é obrigatório";
       inputPaciente.insertAdjacentElement('afterend', error);
-      error.setAttribute('class', 'error');
+      error.setAttribute('id', 'error');
       return false;
     }
 
     if(inputCpfPaciente.value.trim() === ''){
       error.textContent = "Este campo é obrigatório";
       inputCpfPaciente.insertAdjacentElement('afterend', error);
-      error.setAttribute('class', 'error');
+      error.setAttribute('id', 'error');
       return false;
     }
 
     if(inputDiagnostico.value.trim() === ''){
       error.textContent = "Este campo é obrigatório";
       inputDiagnostico.insertAdjacentElement('afterend', error);
-      error.setAttribute('class', 'error');
+      error.setAttribute('id', 'error');
       return false;
     }
 
     if(inputRemedio.value.trim() === ''){
       error.textContent = "Este campo é obrigatório";
       inputRemedio.insertAdjacentElement('afterend', error);
-      error.setAttribute('class', 'error');
+      error.setAttribute('id', 'error');
       return false;
     }
 
     if(inputDosagem.value.trim() === ''){
       error.textContent = "Este campo é obrigatório";
       inputDosagem.insertAdjacentElement('afterend', error);
-      error.setAttribute('class', 'error');
+      error.setAttribute('id', 'error');
       return false;
     } else {
       alert("Remédio prescrito com sucesso!")

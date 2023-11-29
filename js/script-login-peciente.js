@@ -27,7 +27,7 @@ button.addEventListener(("click"), function(event) {
     if(inputNome.value.trim() === ''){
       error.textContent = "Este campo é obrigatório";
       inputNome.insertAdjacentElement('afterend', error);
-      error.setAttribute('class', 'error');
+      error.setAttribute('id', 'error');
       return false;
     } 
     
@@ -35,7 +35,7 @@ button.addEventListener(("click"), function(event) {
     if(inputDocumento.value.trim() === ''){ 
       error.textContent = "Este campo é obrigatório";
       inputDocumento.insertAdjacentElement('afterend', error);
-      error.setAttribute('class', 'error');
+      error.setAttribute('id', 'error');
       return false;
     } 
 
@@ -43,10 +43,10 @@ button.addEventListener(("click"), function(event) {
     if(inputSenha.value.trim() === ''){ 
       error.textContent = "Este campo é obrigatório";
       inputSenha.insertAdjacentElement('afterend', error);
-      error.setAttribute('class', 'error');
+      error.setAttribute('id', 'error');
       return false;
     } else {
-      window.location = "";
+      window.location = "medicamentos.html";
       return false;
     }
     

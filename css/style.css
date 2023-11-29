@@ -2,18 +2,20 @@
 *{
     margin: 0;
     padding: 0;
+    
+    font-family: 'Roboto', sans-serif ;
+   
 }
 
-body {
-    background: #DE923E;
-    font-family: 'Roboto', sans-serif ;
+body{
+    background-color: #DE923E;
 }
 
 input {
     border-radius: 5px;
 }
 
-button {
+.button {
     margin-bottom: 20px;
     background: #0b841c;
     color: #fff;
@@ -28,7 +30,7 @@ button {
 }
 
 /* Estilo da página Home */
-.container {
+.container_home {
     display: flex;
     justify-content: center;
 }
@@ -65,7 +67,7 @@ button {
     text-align: center;
 }
 
-/* Estilo da pagina prescrição */
+/* Estilo da página prescrição */
 .container-prescricao {
     width: 400px;
     height: 325px;
@@ -77,7 +79,75 @@ button {
     text-align: center;
 }
 
-/* Estilização do erro */
+/* Estilo da página de medicamentos */
+.imagem-medicamento {
+    width: 245px;
+    height: 292px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.botao{
+    width: 70px;
+    height: 42px;
+    background-color: #0B8A1C;;
+    font-family: Inter;
+}
+.pesquisa {
+    width: 399px;
+    height: 38px;
+    background-color: #fff;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    outline: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.descricao-medicamento{
+    margin-left: 10px;
+}
+
+h3 {
+    border-bottom: 0.5px solid black;
+}
+
+.instrucoes {
+    display: flex;
+}
+
+
+.nao-entendi{
+    background-color: #800000;
+    color: #e0d2d2;
+    width: 209px;
+    height: 30px;
+    border-radius: 20px;
+    font-family: Inter;
+    margin-top: 120px;
+    outline: none;
+}
+
+/* Estilização dos erros */
+#error {
+    color: red;
+}
+
 .error {
     color: red;
+    text-align: left;
+    padding: 6px;
+    
 }
